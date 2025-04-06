@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="mb-8">
           <Link href="/" className="text-xl font-bold">
-            nextLeap
+            VC Labs
           </Link>
         </div>
 
@@ -115,7 +115,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="text-sm hover:text-gray-300">
-                  NextLeap Reviews
+                  VC Labs Reviews
                 </Link>
               </li>
             </ul>
@@ -226,7 +226,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="text-sm hover:text-gray-300">
-                  NextLeap Capstone
+                  VC Labs Capstone
                 </Link>
               </li>
               <li>
@@ -379,7 +379,7 @@ export default function Footer() {
         </div>
 
         <div className="text-xs text-gray-500">
-          <p>© 2023 NextLeap Learning Technologies Pvt. Ltd.</p>
+          <p>© 2023 VC Labs Learning Technologies Pvt. Ltd.</p>
         </div>
       </div>
     </footer>

@@ -6,9 +6,9 @@ import "./globals.css"
 const lexend = Lexend({ subsets: ["latin"], variable: "--font-lexend" })
 
 export const metadata: Metadata = {
-  title: "NextLeap Product Management Course",
-  description: "12-week online Product Management Course with Certification and Placement Support",
-    generator: 'v0.dev'
+  title: "VC Labs - Venture Capital Cohort",
+  description: "12 week online PE - Venture Capital Cohort with Certification and Placement Support",
+    generator: 'Abhinav Jha'
 }
 
 export default function RootLayout({

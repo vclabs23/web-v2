@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,13 +16,11 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          <div className="relative group">
-            <button className="flex items-center gap-1">
-              Courses <ChevronDown className="w-4 h-4" />
-            </button>
-          </div>
           <Link href="#" className="hover:text-gray-300 transition-colors">
-            NextLeap Reviews
+            Courses
+          </Link>
+          <Link href="#" className="hover:text-gray-300 transition-colors">
+            VC Labs Reviews
           </Link>
           <Link href="#" className="hover:text-gray-300 transition-colors">
             Blog
@@ -49,18 +47,8 @@ export default function Header() {
         </div>
 
         <nav className="flex flex-col px-6 py-4 space-y-4">
-          <h4 className="text-gray-500">Courses</h4>
-          <Link href="#" className="flex justify-between items-center">
-            Product Manager Fellowship <span>→</span>
-          </Link>
-          <Link href="#" className="flex justify-between items-center">
-            Product Designer Fellowship <span>→</span>
-          </Link>
-          <Link href="#" className="flex justify-between items-center">
-            Data Analyst Fellowship <span>→</span>
-          </Link>
-
-          <Link href="#" className="font-semibold">NextLeap Reviews</Link>
+          <Link href={'#'} className="font-semibold">Courses</Link>
+          <Link href="#" className="font-semibold">VC Labs Reviews</Link>
           <Link href="#" className="font-semibold">Blog</Link>
         </nav>
       </div>

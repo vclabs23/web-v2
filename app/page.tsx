@@ -3,11 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-  ArrowLeft,
-  ArrowRight,
   Calendar,
   ChevronDown,
-  ChevronUp,
   Download,
   Phone,
 } from "lucide-react";
@@ -26,7 +23,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import WhyChooseSection from "@/components/why-choose";
 import SkillsSection from "@/components/build-skill";
-import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   const people = [
@@ -242,19 +238,18 @@ export default function Home() {
           <div className="max-w-3xl">
             {/* Title & Description */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              Product Manager Fellowship
+            PE-Venture Capital Cohort
             </h1>
             <p className="text-lg md:text-xl mb-8">
-              12-week online Product Management Course with Certification and
-              Placement Support
+            12 week online PE - Venture Capital Cohort with Certification and Placement Support
             </p>
 
             {/* Feature Cards */}
             <div className="grid grid-cols-2 md:grid-cols-4 mb-12 rounded-xl overflow-hidden">
               {[
                 { title: "Live", desc: "Sessions on Zoom" },
-                { title: "3 months", desc: "Fellowship timeline" },
-                { title: "Mentorship", desc: "With experienced PMs" },
+                { title: "3 months", desc: "Cohort timeline" },
+                { title: "Mentorship", desc: "With experienced VCs" },
                 { title: "Placement", desc: "Support for 1 year" },
               ].map((item, i) => (
                 <div
@@ -270,7 +265,7 @@ export default function Home() {
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-yellow-200 text-black font-semibold px-5 py-3 rounded-xl hover:bg-yellow-600">
-                Request a Callback
+                Book a Call
               </button>
               <button className="flex items-center justify-center gap-2 border text-black rounded-xl bg-white px-5 py-3 hover:bg-white/10 hover:text-white transition-colors">
                 <Download className="w-5 h-5" />
@@ -321,7 +316,7 @@ export default function Home() {
       <section className="px-4 md:px-6 lg:px-20 py-8 text-white">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-8">
-            750+ successful transitions
+            10+ successful transitions
           </h2>
 
           {/* Marquee Effect using Framer Motion */}
@@ -376,7 +371,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
-            What Will You Learn
+          What You'll learn in 3 Months
           </h2>
 
           {/* Course Content Cards */}
@@ -465,15 +460,15 @@ export default function Home() {
               },
               {
                 day: "Every Sunday",
-                title: "Mentor Session & Case Hours",
+                title: "Mentor Session & Industry Session",
                 times: [
                   "Mentor Session (10:30 AM - 12:30 PM IST)",
-                  "Case Hours (2:00 PM - 4:00 PM IST)",
+                  "Industry Session (2:00 PM - 4:00 PM IST)",
                 ],
               },
               {
                 day: "Every Wednesday",
-                title: "Product Challenge",
+                title: "Assignment Challenge",
                 times: ["08:00 PM - 10:00 PM IST"],
               },
             ].map((item, index) => (
@@ -535,10 +530,10 @@ export default function Home() {
             </div>
             <div>
               <h3 className="font-bold text-lg">
-                Have more questions or need more information?
+              Have more questions or need any help? 
               </h3>
               <p className="text-sm text-gray-300">
-                Request a callback to get personalized guidance
+              Request a callback to get personalized guidance
               </p>
             </div>
           </div>
@@ -553,8 +548,7 @@ export default function Home() {
             1 Year Placement Support
           </h2>
           <p className="text-center text-gray-300 mb-12">
-            Clear the cut-offs to be a graduate and benefit by getting placed in
-            top tier partner companies
+          Clear the cut-off marks in your graduation project to get access to jobs at our Venture Partners
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -629,22 +623,22 @@ export default function Home() {
         <div className="max-w-7xl mx-auto text-center">
           <h3 className="text-lg mb-2">Your Future Job Title</h3>
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            Growth Product
+          Investment Associate 
             <br />
-            Manager
+            Investment Analyst 
           </h2>
 
           <div className="h-1 w-96 max-w-full bg-muted mx-auto mb-8"></div>
 
           <div className="grid md:grid-cols-2 gap-3">
             <div className="bg-[#24634C] rounded-xl p-8">
-              <h3 className="text-xl text-gray-300 mb-4">Average Pay Scale</h3>
+              <h3 className="text-xl text-gray-300 mb-4">Average Salary</h3>
               <p className="text-4xl font-bold">14-18 Lakhs</p>
             </div>
 
             <div className="bg-[#24634C] rounded-xl p-8">
               <h3 className="text-xl text-gray-300 mb-4">
-                Highest Salary at NextLeap
+                Highest Salary at VC Labs
               </h3>
               <p className="text-4xl font-bold">31 Lakhs</p>
             </div>
@@ -653,10 +647,10 @@ export default function Home() {
       </section>
 
       {/* Success Stories */}
-      <SuccessStories />
+      {/* <SuccessStories /> */}
 
       {/* Cohort Stats */}
-      <CohortStats />
+      {/* <CohortStats /> */}
 
       {/* Scholarship Section */}
       <section className="px-4 md:px-6 lg:px-20 py-12">
@@ -687,7 +681,7 @@ export default function Home() {
       </section>
 
       {/* Live Session Preview */}
-      <section className="px-4 md:px-6 lg:px-20 py-12">
+      {/* <section className="px-4 md:px-6 lg:px-20 py-12">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
             Take a Peek At a Live Session
@@ -703,13 +697,13 @@ export default function Home() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Build Skills Section */}
       <SkillsSection />
 
       {/* Tools Section */}
-      <ToolsSection />
+      {/* <ToolsSection /> */}
 
       {/* Certificate Section */}
       <section className="px-4 md:px-6 lg:px-20 py-12">
@@ -726,7 +720,7 @@ export default function Home() {
             </div>
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Verifiable Certificate of Accomplishment
+              Certificate of Completion
               </h2>
               <p className="text-gray-300 mb-4">
                 Upon completing the Product Manager Fellowship course, you'll
@@ -761,7 +755,7 @@ export default function Home() {
       </section>
 
       {/* Awards Section */}
-      <section className="px-4 md:px-6 lg:px-20 py-12">
+      {/* <section className="px-4 md:px-6 lg:px-20 py-12">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
             Experience the award-winning learning experience
@@ -787,7 +781,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <WhyChooseSection />
+      <WhyChooseSection /> */}
       <Footer />
     </main>
   );

@@ -3,7 +3,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, ArrowLeft } from "lucide-react";
+import { ArrowRight, ArrowLeft, Monitor,
+  FileText,
+  CheckCircle,
+  GraduationCap,} from "lucide-react";
 
 // Sample student portfolio data
 const students = [
@@ -38,20 +41,20 @@ export default function SkillsSection() {
       <div className="max-w-7xl mx-auto">
         {/* Section Heading */}
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
-          Build Skills The NextLeap Way
+        Build Skills The VC Lab Way
         </h2>
 
         {/* Feature Icons */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           {[
-            { title: "Live Sessions", icon: "🖥️" },
-            { title: "Weekly Projects", icon: "📄" },
-            { title: "Mentor Feedback", icon: "✅" },
-            { title: "Peer Learning", icon: "🎓" },
+            { title: "Expert led live sessions", icon: Monitor },
+            { title: "Weekly Projects", icon: FileText },
+            { title: "Mentor Feedback", icon: CheckCircle },
+            { title: "Access to VenturePrepAI", icon: GraduationCap },
           ].map((item, index) => (
             <div key={index} className="flex flex-col items-center text-center">
               <div className="rounded-lg p-4 text-5xl">
-                {item.icon}
+                {<item.icon/>}
               </div>
               <h3 className="font-bold">{item.title}</h3>
             </div>
@@ -59,7 +62,7 @@ export default function SkillsSection() {
         </div>
 
         {/* Student Portfolio Cards */}
-        <div className="overflow-hidden relative">
+        {/* <div className="overflow-hidden relative">
           <motion.div
             key={startIndex}
             initial={{ x: 100, opacity: 0 }}
@@ -91,10 +94,10 @@ export default function SkillsSection() {
                 </div>
               ))}
           </motion.div>
-        </div>
+        </div> */}
 
         {/* Pagination Controls (Bottom Right) */}
-        <div className="w-full flex items-center justify-end mt-6 gap-4">
+        {/* <div className="w-full flex items-center justify-end mt-6 gap-4">
           <button
             className="w-10 h-10 rounded-xl bg-white flex items-center justify-center hover:bg-white/10 transition"
             onClick={prevPage}
@@ -109,7 +112,7 @@ export default function SkillsSection() {
           >
             <ArrowRight className="w-5 h-5 text-black hover:text-white" />
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

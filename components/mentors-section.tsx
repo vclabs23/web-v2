@@ -84,9 +84,12 @@ export default function MentorsSection() {
     <section className="px-4 md:px-6 lg:px-20 py-12 text-white relative">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
-          Interview Prep With Our Mentors
+        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
+          Prepare Interview with VenturePrepAI
         </h2>
+        <p className="text-sm text-gray-300 mb-8 text-center">
+        Get interview-ready with VenturePrepAI, your smart assistant for cracking technical and behavioral rounds. Practice tailored questions, receive instant feedback, and boost your confidence before the big day.
+        </p>
 
         {/* Mentors Grid with Framer Motion */}
         <div className="overflow-hidden relative">

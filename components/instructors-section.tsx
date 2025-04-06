@@ -85,7 +85,7 @@ export default function InstructorsSection() {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
-          Learn Concepts From Our Instructors
+        Excel your career from our instructors
         </h2>
 
         {/* Instructors Grid with Framer Motion */}
